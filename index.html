@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joe Rogan Drinks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="viewportchecker.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".pull-this-up").click(function () {
+          $(".pull-this-up").slideUp();
+          const addMargin = document.querySelector(".hero-section-banner-text");
+          addMargin.style.position = "relative";
+          addMargin.style.top = "-285px";
+          addMargin.style.zIndex = "999";
+          // addMargin.style.backgroundPositionX = '-80px';
+          addMargin.style.opacity = ".34";
+          const body = document.querySelector("body");
+          body.style.overflow = "auto";
+
+          const stickyCta = document.querySelector(".sticky-trial-button");
+          stickyCta.style.display = "block";
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      document.body.style.display = "none";
+
+      // If onbeforeunload fails
+      window.onload = function () {
+        window.setTimeout(function () {
+          window.scrollTo(0, 0);
+          document.body.style.display = "inherit";
+        }, 0);
+      };
+
+      /* This should scroll the page to the top before the page refreshes */
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      };
+
+      //
+    </script>
+
+    <section class="page-container">
+      <header class="nav-bar">
+        <div class="logo-container"><div class="logo"></div></div>
+        <div class="cta-button-header">
+          <button class="cta-button-header-conteiner">
+            <div class="cta-text-box">
+              <p class="ten-drink-trial">10 drink trial</pp>
+            </div>
+            <div class="cta-price-box"><p class="price">$29</p></div>
+          </button>
+        </div>
+        <div class="hamburger-menu">
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </header>
+      <section class="hero-section">
+        <div class="pull-this-up">
+          <div class="pull-this-up-arrow"><div class="arrow"></div></div>
+          <div class="pull-this-up-text-box">
+            <h3 class="pull-this-up-text">Pull this up</h3>
+          </div>
+        </div>
+        <div class="hero-section-banner-text"></div>
+        <div class="cta-on-banner">
+          <button class="cta-button-header-conteiner-mobile">
+            <div class="text-box-mobile">
+              <p class="ten-drink-trial-mobile">10 drink trial</p>
+            </div>
+            <div class="price-box-mobile"><p class="price-mobile">$29</p></div>
+          </button>
+        </div>
+      </section>
+      <section class="video-section-container">
+        <div class="video-section">
+          <div class="video-section-video">
+            <div class="video">
+              <span class="play-button"></span>
+            </div>
+          </div>
+          <div class="video-section-description">
+            <div class="description-content">
+              <h3 class="video-title">
+                Watch the excerpt from the show<span class="video-duration"
+                  >5:05</span
+                >
+              </h3>
+              <p class="video-description">
+                Listen or click play button to watch Dr. Hill banter with Joe
+                Rogan for a three hour episode.<br /><br />
+                The JRE is ribald and unapologetic. This one is neither kid
+                friendly or work safe!
+              </p>
+              <div class="video-desc-footer">
+                <p class="footer-text">Full episode on</p>
+                <span class="spotify"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bottle-section-container">
+        <div class="bottle-section">
+          <div class="bottle-section-left-side">
+            <h3 class="bottle-section-left-side-text">Try all our formulas</h3>
+          </div>
+          <div class="bottle-section-middle">
+            <div class="bottle-pic bottle-pic-1"></div>
+            <div class="bottle-pic bottle-pic-2"></div>
+            <div class="bottle-pic bottle-pic-3"></div>
+            <div class="bottle-pic bottle-pic-4"></div>
+            <div class="bottle-pic bottle-pic-5"></div>
+          </div>
+          <div class="bottle-section-right-side">
+            <div class="bottle-section-right-container">
+              <h3 class="right-side-title">
+                <span class="big-ten">10</span>x 1oz drink shots
+              </h3>
+              <p class="right-side-text">
+                Designed by UCLA-trained neuroscientists to help you power past
+                stress, overcome mental blocks, and boost mental output.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews-section-container">
+        <div class="reviews-section">
+          <div class="reviews-section-header">
+            <div class="star-ratings">
+              <span class="star-rating"></span>
+              <span class="star-rating"></span>
+              <span class="star-rating"></span>
+              <span class="star-rating"></span>
+              <span class="left-half-rating"></span>
+              <span class="right-half-rating"></span>
+            </div>
+            <div class="reviews-section-title">
+              <h3 class="reviews-title">Based on 1,441 reviews</h3>
+            </div>
+          </div>
+          <div class="slider reviews-section-main">
+            <div class="slide-track reviews-section-upper">
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Colt Whitcomb</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">
+                      THIS HAS CHANGED THE GAME FOR ME!
+                    </p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      Before TruBrain, I was experiencing a lot of sluggishness
+                      and a lack of focus. After I started taking this
+                      regularly, I feel alert, awake, and don't have to take
+                      frequent naps throughout the day just to stay productive.
+                      This has changed the game for me and I'm so grateful to
+                      have found this product!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-short">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Zack Jin</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">LIQUID MOTIVATION</p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      This stuff works!! I work on my feet 8-10 hours a day and
+                      when I feel like I'm started to "drag", I take one of the
+                      Extras and it's immediate energy and motivation!! I always
+                      keep an Extra in my bag for those lower motivation days
+                      and it saves me every time. This stuff is so much better
+                      than sugar filled energy drinks. I don't even drink them
+                      anymore - TruBrain is all I need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Ann M.</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">
+                      EVERYONE SHOULD TRY THIS
+                    </p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      Great way to try out the different products/strengths!
+                      Great packaging, great product and made me feel confident
+                      in deciding to purchase full boxes. Really like the mellow
+                      for relaxing at night but getting some thought work done.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-short">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Zack Jin</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">LIQUID MOTIVATION</p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      This stuff works!! I work on my feet 8-10 hours a day and
+                      when I feel like I'm started to "drag", I take one of the
+                      Extras and it's immediate energy and motivation!! I always
+                      keep an Extra in my bag for those lower motivation days
+                      and it saves me every time. This stuff is so much better
+                      than sugar filled energy drinks. I don't even drink them
+                      anymore - TruBrain is all I need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Colt Whitcomb</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">
+                      THIS HAS CHANGED THE GAME FOR ME!
+                    </p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      Before TruBrain, I was experiencing a lot of sluggishness
+                      and a lack of focus. After I started taking this
+                      regularly, I feel alert, awake, and don't have to take
+                      frequent naps throughout the day just to stay productive.
+                      This has changed the game for me and I'm so grateful to
+                      have found this product!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-short">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Zack Jin</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">LIQUID MOTIVATION</p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      This stuff works!! I work on my feet 8-10 hours a day and
+                      when I feel like I'm started to "drag", I take one of the
+                      Extras and it's immediate energy and motivation!! I always
+                      keep an Extra in my bag for those lower motivation days
+                      and it saves me every time. This stuff is so much better
+                      than sugar filled energy drinks. I don't even drink them
+                      anymore - TruBrain is all I need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Ann M.</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">
+                      EVERYONE SHOULD TRY THIS
+                    </p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      Great way to try out the different products/strengths!
+                      Great packaging, great product and made me feel confident
+                      in deciding to purchase full boxes. Really like the mellow
+                      for relaxing at night but getting some thought work done.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-short">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Zack Jin</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">LIQUID MOTIVATION</p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      This stuff works!! I work on my feet 8-10 hours a day and
+                      when I feel like I'm started to "drag", I take one of the
+                      Extras and it's immediate energy and motivation!! I always
+                      keep an Extra in my bag for those lower motivation days
+                      and it saves me every time. This stuff is so much better
+                      than sugar filled energy drinks. I don't even drink them
+                      anymore - TruBrain is all I need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Colt Whitcomb</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">
+                      THIS HAS CHANGED THE GAME FOR ME!
+                    </p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      Before TruBrain, I was experiencing a lot of sluggishness
+                      and a lack of focus. After I started taking this
+                      regularly, I feel alert, awake, and don't have to take
+                      frequent naps throughout the day just to stay productive.
+                      This has changed the game for me and I'm so grateful to
+                      have found this product!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-short">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Zack Jin</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">LIQUID MOTIVATION</p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      This stuff works!! I work on my feet 8-10 hours a day and
+                      when I feel like I'm started to "drag", I take one of the
+                      Extras and it's immediate energy and motivation!! I always
+                      keep an Extra in my bag for those lower motivation days
+                      and it saves me every time. This stuff is so much better
+                      than sugar filled energy drinks. I don't even drink them
+                      anymore - TruBrain is all I need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Ann M.</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">
+                      EVERYONE SHOULD TRY THIS
+                    </p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      Great way to try out the different products/strengths!
+                      Great packaging, great product and made me feel confident
+                      in deciding to purchase full boxes. Really like the mellow
+                      for relaxing at night but getting some thought work done.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-short">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Zack Jin</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">LIQUID MOTIVATION</p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      This stuff works!! I work on my feet 8-10 hours a day and
+                      when I feel like I'm started to "drag", I take one of the
+                      Extras and it's immediate energy and motivation!! I always
+                      keep an Extra in my bag for those lower motivation days
+                      and it saves me every time. This stuff is so much better
+                      than sugar filled energy drinks. I don't even drink them
+                      anymore - TruBrain is all I need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide-track reviews-section-lower">
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Zack Jin</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">LIQUID MOTIVATION</p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      This stuff works!! I work on my feet 8-10 hours a day and
+                      when I feel like I'm started to "drag", I take one of the
+                      Extras and it's immediate energy and motivation!! I always
+                      keep an Extra in my bag for those lower motivation days
+                      and it saves me every time. This stuff is so much better
+                      than sugar filled energy drinks. I don't even drink them
+                      anymore - TruBrain is all I need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Colt Whitcomb</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">
+                      THIS HAS CHANGED THE GAME FOR ME!
+                    </p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      Before TruBrain, I was experiencing a lot of sluggishness
+                      and a lack of focus. After I started taking this
+                      regularly, I feel alert, awake, and don't have to take
+                      frequent naps throughout the day just to stay productive.
+                      This has changed the game for me and I'm so grateful to
+                      have found this product!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-short">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Zack Jin</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">LIQUID MOTIVATION</p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      This stuff works!! I work on my feet 8-10 hours a day and
+                      when I feel like I'm started to "drag", I take one of the
+                      Extras and it's immediate energy and motivation!! I always
+                      keep an Extra in my bag for those lower motivation days
+                      and it saves me every time. This stuff is so much better
+                      than sugar filled energy drinks. I don't even drink them
+                      anymore - TruBrain is all I need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Ann M.</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">
+                      EVERYONE SHOULD TRY THIS
+                    </p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      Great way to try out the different products/strengths!
+                      Great packaging, great product and made me feel confident
+                      in deciding to purchase full boxes. Really like the mellow
+                      for relaxing at night but getting some thought work done.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Zack Jin</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">LIQUID MOTIVATION</p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      This stuff works!! I work on my feet 8-10 hours a day and
+                      when I feel like I'm started to "drag", I take one of the
+                      Extras and it's immediate energy and motivation!! I always
+                      keep an Extra in my bag for those lower motivation days
+                      and it saves me every time. This stuff is so much better
+                      than sugar filled energy drinks. I don't even drink them
+                      anymore - TruBrain is all I need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Colt Whitcomb</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">
+                      THIS HAS CHANGED THE GAME FOR ME!
+                    </p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      Before TruBrain, I was experiencing a lot of sluggishness
+                      and a lack of focus. After I started taking this
+                      regularly, I feel alert, awake, and don't have to take
+                      frequent naps throughout the day just to stay productive.
+                      This has changed the game for me and I'm so grateful to
+                      have found this product!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-short">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Zack Jin</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">LIQUID MOTIVATION</p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      This stuff works!! I work on my feet 8-10 hours a day and
+                      when I feel like I'm started to "drag", I take one of the
+                      Extras and it's immediate energy and motivation!! I always
+                      keep an Extra in my bag for those lower motivation days
+                      and it saves me every time. This stuff is so much better
+                      than sugar filled energy drinks. I don't even drink them
+                      anymore - TruBrain is all I need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Ann M.</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">
+                      EVERYONE SHOULD TRY THIS
+                    </p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      Great way to try out the different products/strengths!
+                      Great packaging, great product and made me feel confident
+                      in deciding to purchase full boxes. Really like the mellow
+                      for relaxing at night but getting some thought work done.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Zack Jin</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">LIQUID MOTIVATION</p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      This stuff works!! I work on my feet 8-10 hours a day and
+                      when I feel like I'm started to "drag", I take one of the
+                      Extras and it's immediate energy and motivation!! I always
+                      keep an Extra in my bag for those lower motivation days
+                      and it saves me every time. This stuff is so much better
+                      than sugar filled energy drinks. I don't even drink them
+                      anymore - TruBrain is all I need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Colt Whitcomb</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">
+                      THIS HAS CHANGED THE GAME FOR ME!
+                    </p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      Before TruBrain, I was experiencing a lot of sluggishness
+                      and a lack of focus. After I started taking this
+                      regularly, I feel alert, awake, and don't have to take
+                      frequent naps throughout the day just to stay productive.
+                      This has changed the game for me and I'm so grateful to
+                      have found this product!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-short">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Zack Jin</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">LIQUID MOTIVATION</p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      This stuff works!! I work on my feet 8-10 hours a day and
+                      when I feel like I'm started to "drag", I take one of the
+                      Extras and it's immediate energy and motivation!! I always
+                      keep an Extra in my bag for those lower motivation days
+                      and it saves me every time. This stuff is so much better
+                      than sugar filled energy drinks. I don't even drink them
+                      anymore - TruBrain is all I need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide floating-reviews review-long">
+                <div class="review">
+                  <div class="name-rating">
+                    <div class="rating">
+                      <span class="rating-content"></span>
+                    </div>
+                    <div class="reviewer">
+                      <h3 class="reviewer-name">Ann M.</h3>
+                    </div>
+                  </div>
+                  <div class="review-headline">
+                    <p class="review-headline-content">
+                      EVERYONE SHOULD TRY THIS
+                    </p>
+                  </div>
+                  <div class="review-text">
+                    <p class="review-text-content">
+                      Great way to try out the different products/strengths!
+                      Great packaging, great product and made me feel confident
+                      in deciding to purchase full boxes. Really like the mellow
+                      for relaxing at night but getting some thought work done.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="sticky-trial-button">
+        <div class="cta-sticky">
+          <button class="cta-sticky-header">
+            <div class="text-box-mobile-sticky">
+              <p class="ten-drink-trial-mobile-sticky">10 drink trial</p>
+            </div>
+            <div class="price-box-mobile-sticky">
+              <p class="price-mobile-sticky">$29</p>
+            </div>
+          </button>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
